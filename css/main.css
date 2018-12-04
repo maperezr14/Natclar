@@ -1,0 +1,148 @@
+/*Fuentes*/
+@font-face {
+  font-family: 'GothamNarrow-Black';
+  src: 
+	url('../fonts/GothamNarrow-Black.eot?#iefix') format('embedded-opentype'),  
+	url('../fonts/GothamNarrow-Black.otf')  format('opentype'),	     
+	url('../fonts/GothamNarrow-Black.woff') format('woff'), 
+	url('../fonts/GothamNarrow-Black.ttf')  format('truetype'), 
+	url('../fonts/GothamNarrow-Black.svg#GothamNarrow-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamNarrow-Book';
+  src: 
+	url('../fonts/GothamNarrow-Book.eot?#iefix') format('embedded-opentype'),  
+	url('../fonts/GothamNarrow-Book.otf')  format('opentype'),
+	url('../fonts/GothamNarrow-Book.woff') format('woff'), 
+	url('../fonts/GothamNarrow-Book.ttf')  format('truetype'), 
+	url('../fonts/GothamNarrow-Book.svg#GothamNarrow-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: 
+	url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),  
+	url('../fonts/Gotham-Bold.otf')  format('opentype'),	     
+	url('../fonts/Gotham-Bold.woff') format('woff'), 
+	url('../fonts/Gotham-Bold.ttf')  format('truetype'), 
+	url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+	color: #163b72;
+	font-size: 14px;
+	font-family: 'GothamNarrow-Book';
+	margin: 0;
+	padding: 0;
+}
+.banners .container-fluid .row .column {
+    padding: 0;
+}
+
+.banners .container-fluid {
+    padding: 0;
+}
+
+.banners .container-fluid .row {
+    margin: 0;
+}
+.banners {
+    position: relative;
+}
+.sombra {
+	background: rgba(0,0,0,0.7);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.7) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.7) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.7)), color-stop(20%, transparent), color-stop(80%, transparent), color-stop(100%, rgba(0,0,0,0.7)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.7) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.7) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0.7) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.7) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,0.7) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.7) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.7) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+.banners h2 {
+    position: absolute;
+    z-index: 1;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banners {
+    position: relative;
+}
+
+.banners h2 {
+    position: absolute;
+    z-index: 1;
+    color: #FFF;
+    font-family: 'GothamNarrow-Black';
+    font-size: 70px;
+    margin: 0;
+    line-height: 40px;
+    bottom: 24%;
+    left: 21%;
+    text-shadow: 3px 0 8px rgba(16, 16, 16, 0.5);
+}
+.indicador {
+    position: absolute;
+    z-index: 2;
+    bottom: 1%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 3px 0 8px rgba(16, 16, 16, 0.5);
+    animation: down .5s infinite;
+}
+
+@-webkit-keyframes down {
+    0% {
+        bottom: 0.8%;
+    }
+    50% {
+		bottom: 1%;
+    }
+    100% {
+		bottom: 1.2%;
+    }
+}
+.carousel-item img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banners h2 span {
+    font-size: 30px;
+    font-family: 'Gotham-Bold';
+}
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+}
+span.control-next, span.control-prev {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #f68d2c;
+    color: #FFF;
+    line-height: 25px;
+    border-radius: 50%;
+    text-align: center;
+}
