@@ -11,25 +11,31 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 
 	</head>
 	<body>
 		<header>
-			<a href="">
-				<h1><img id="logo" src="img/trabaja-nosotros.png"> Natclar</h1>
-			</a>
-			<nav>
-				<div class="user"><i class="far fa-user"></i> <span class="name-user">María Pérez</span> <i class="fas fa-angle-down"></i></div>
-				<div class="opciones-menu">
-					<a href="perfil.html">Mi Perfil</a>
-					<a href="postulaciones.html">Mis Postulaciones</a>
-					<a href="procesos.html">Procesos</a>
-					<a href="checklist.html">Checklist</a>
-					<a href="#">Cerrar Sesión</a>
-				</div>
-			</nav>
+			<div class="menu-content">
+				<a href="#">
+					<h1><img id="logo" src="img/trabaja-nosotros.png"> Natclar</h1>
+				</a>
+				<nav>
+					<div class="dropdown show">
+						<a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="far fa-user"></i> <span class="name-user">María Pérez</span> <i class="fas fa-chevron-down"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="perfil.html">Mi Perfil</a>
+							<a class="dropdown-item" href="postulaciones.html">Mis Postulaciones</a>
+							<a class="dropdown-item" href="procesos.html">Procesos</a>
+							<a class="dropdown-item" href="checklist.html">Checklist</a>
+							<a class="dropdown-item" href="#">Cerrar Sesión</a>
+						</div>
+					</div>
+				</nav>
+			</div>
 		</header>
 		<main>
 			<div class="container">
@@ -45,40 +51,42 @@
 		</main>
 		<footer>
 			<div class="container-fluid">
-				<div class="row">
-					<div class="column col-sm-12 ft-top">
-						<div class="col-md-3 col-sm-12 logo-footer">
-							<img src="img/logo-natclar.png">
-						</div>
-						<div class="col-md-3 col-sm-12 fb-social">
-							<h3><i class="fas fa-plus"></i> Encuentranos en:</h3>
-							<ul>
-								<li>
-									<a href="https://www.facebook.com/natclar.oficial/"><i class="fab fa-facebook"></i> Natclar Oficial</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<h3><i class="fas fa-plus"></i> Somos</h3>
-							<ul>
-								<li>
-									<p>Confían en las personas Orgullo de los hacen Disfrutan de las personas on las que trabajan.</p>
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<h3><i class="far fa-envelope-open"></i> Contáctanos</h3>
-							<ul>
-								<li>Calle Los Colibríes 104 Urbanización Limatambo, San Isidro, Lima - Perú.</li>
-								<li>Tel.: (01) 213 4141</li>
-								<li><a href="mailto:info@natclar.com.pe">info@natclar.com.pe</a></li>
-							</ul>
-						</div>
+				<div class="row ft-top">
+				  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 logo-footer">
+				    	<img src="img/logo-natclar.png">
+				  	</div>
+			  		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					    <div class="row">
+						  	<div class="col-sm-12 col-md-4">
+						    	<h3><img src="img/cruz_footer.png"> Encuentranos en:</h3>
+								<ul>
+									<li>
+										<a href="https://www.facebook.com/natclar.oficial/"><img src="img/facebook.png"> Natclar Oficial</a>
+									</li>
+								</ul>
+						  	</div>
+						  	<div class="col-sm-12 col-md-4">
+						    	<h3><img src="img/cruz_footer.png"> Somos</h3>
+								<ul>
+									<li>
+										<p>Confían en las personas Orgullo de los hacen Disfrutan de las personas con las que trabajan.</p>
+									</li>
+								</ul>
+						  	</div>
+						  	<div class="col-md-4">
+						    	<h3><img src="img/contactanos.png"> Contáctanos</h3>
+								<ul>
+									<li>Calle Los Colibríes 104 Urbanización Limatambo, San Isidro, Lima - Perú.</li>
+									<li>Tel.: (01) 213 4141</li>
+									<li><a href="mailto:info@natclar.com.pe">info@natclar.com.pe</a></li>
+								</ul>
+						  	</div>
+					  	</div>
 					</div>
-					<div class="column col-sm-12 ft-down">
-						<div class="enlaces">
-							<a href="https://www.natclar.com.pe/">www.natclar.com.pe</a> / <a href="#terminos"> Términos y Condiciones</a>
-						</div>
+				</div>
+				<div class="row ft-down">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<a href="https://www.natclar.com.pe">www.natclar.com.pe</a> / <a href="#terminosycondiciones">Términos y Condiciones</a>
 					</div>
 				</div>
 			</div>
