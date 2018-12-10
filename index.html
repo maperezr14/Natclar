@@ -9,8 +9,8 @@
         <link rel="shortcut icon" type="image/x-icon" href="https://www.natclar.com.pe/wp-content/themes/natclar/images/favicon.ico">
 
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.min.css">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -18,14 +18,24 @@
 	<body>
 		<header>
 			<div class="menu-content">
-				<a href="#">
-					<h1><img id="logo" src="img/trabaja-nosotros.png"> Natclar</h1>
+				<a href="index.html">
+					<h1>
+						<picture>
+							<source srcset="img/trabaja-nosotros_m.png" media="(max-width: 768px)">
+							<source srcset="img/trabaja-nosotros.png">
+							<img id="logo" src="img/trabaja-nosotros.png">
+						</picture> 
+						Natclar
+					</h1>
 				</a>
 				<nav>
 					<div class="dropdown show">
-						<a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="far fa-user"></i> <span class="name-user">María Pérez</span> <i class="fas fa-chevron-down"></i>
+						<a class="btn dropdown-toggle" href="#login" data-toggle="modal" data-target="#login" role="button">
+							<i class="far fa-user"></i> <span class="name-user">Iniciar Sesión</span> <i class="fas fa-chevron-down"></i>
 						</a>
+						<!-- <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="far fa-user"></i> <span class="name-user">María Pérez</span> <i class="fas fa-chevron-down"></i>
+						</a> -->
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 							<a class="dropdown-item" href="perfil.html">Mi Perfil</a>
 							<a class="dropdown-item" href="postulaciones.html">Mis Postulaciones</a>
@@ -43,7 +53,8 @@
 					<div class="row">
 						<div class="column col-sm-12 ">
 							<h2>Trabaja con nosotros <br><span>La clave del éxito "Es su gente"</span></h2>
-							<div id="sliderppal" class="carousel slide sombra" data-ride="carousel" data-interval="6000">
+							<img class="overlay" src="img/overlay.png">
+							<div id="sliderppal" class="carousel slide" data-ride="carousel" data-interval="6000">
 								<!-- The slideshow -->
 								<div class="carousel-inner">
 									<div class="carousel-item active">
@@ -180,7 +191,7 @@
 								    </div>
 								  </div>
 								</div>
-								<button class="btn btn-buscar" type="button" >Buscar</button>
+								<button class="btn btn-buscar btn-naranja" type="button">Buscar</button>
 							</form>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 resultados">
@@ -201,7 +212,7 @@
 												    </div>
 												</div>
 												<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 clic-detalle">
-											    	<a class="btn btn-detalle" href="#" role="button">Detalle</a>
+											    	<a class="btn btn-detalle" href="#modalDetalle" data-toggle="modal" data-target="#modalDetalle" role="button">Detalle</a>
 												</div>
 											</div>
 									    </li>
@@ -216,7 +227,7 @@
 												    </div>
 												</div>
 												<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 clic-detalle">
-											    	<a class="btn btn-detalle" href="#" role="button">Detalle</a>
+											    	<a class="btn btn-detalle" href="#modalDetalle" data-toggle="modal" data-target="#modalDetalle" role="button">Detalle</a>
 												</div>
 											</div>
 									    </li>
@@ -231,7 +242,7 @@
 												    </div>
 												</div>
 												<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 clic-detalle">
-											    	<a class="btn btn-detalle" href="#" role="button">Detalle</a>
+											    	<a class="btn btn-detalle" href="#modalDetalle" data-toggle="modal" data-target="#modalDetalle" role="button">Detalle</a>
 												</div>
 											</div>
 									    </li>
@@ -246,7 +257,7 @@
 												    </div>
 												</div>
 												<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 clic-detalle">
-											    	<a class="btn btn-detalle" href="#" role="button">Detalle</a>
+											    	<a class="btn btn-detalle" href="#modalDetalle" data-toggle="modal" data-target="#modalDetalle" role="button">Detalle</a>
 												</div>
 											</div>
 									    </li>
@@ -261,7 +272,7 @@
 												    </div>
 												</div>
 												<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 clic-detalle">
-											    	<a class="btn btn-detalle" href="#" role="button">Detalle</a>
+											    	<a class="btn btn-detalle" href="#modalDetalle" data-toggle="modal" data-target="#modalDetalle" role="button">Detalle</a>
 												</div>
 											</div>
 									    </li>
@@ -295,6 +306,287 @@
 					</div>
 				</div>
 			</section>
+			<!-- Modal Detalle -->
+			<div class="modal fade modalDetalle" id="modalDetalle" tabindex="-1" role="dialog" aria-labelledby="Detalle del Trabajo" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLongTitle">Médico de Salud Ocupacional</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <div class="row">
+			          <h4>Ubicación</h4>
+					  <div class="col-xs-12 col-sm-12 col-md-6">
+					    <p>Lugar de Trabajo:</p>
+					    <ul>
+					    	<li>Lima, Comas</li>
+					    </ul>
+					  </div>
+					  <div class="col-xs-12 col-sm-12 col-md-6">
+					    <p>Unidad Organizativa:</p>
+					    <ul>
+					    	<li>Clínica</li>
+					    </ul>
+					  </div>
+					  <div class="col-xs-12 col-sm-12 col-md-6">
+					    <p>Sede:</p>
+					    <ul>
+					    	<li>La Victoria</li>
+					    </ul>
+					  </div>
+					  <div class="col-xs-12 col-sm-12 col-md-6">
+					    <p>Área:</p>
+					    <ul>
+					    	<li>Administración</li>
+					    </ul>
+					  </div>
+					</div>
+					<div class="row">
+					  <h4>Funciones:</h4>
+					  <div class="col-xs-12">
+					    <ul>
+					    	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    	tempor incididunt ut labore et dolore magna aliqua.</li>
+					    	<li>Ut enim ad minim veniam,
+					    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					    	consequat.</li>
+					    	<li>Duis aute irure dolor in reprehenderit in voluptate velit esse
+					    	cillum dolore eu fugiat nulla pariatur.</li>
+					    	<li>Excepteur sint occaecat cupidatat non
+					    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>					    	   
+					    </ul>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col-xs-12">
+					    <h4>Requisitos:</h4>
+					  <div class="col-xs-12">
+					    <ul>
+					    	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    	tempor incididunt ut labore et dolore magna aliqua.</li>
+					    	<li>Ut enim ad minim veniam,
+					    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					    	consequat.</li>
+					    	<li>Duis aute irure dolor in reprehenderit in voluptate velit esse
+					    	cillum dolore eu fugiat nulla pariatur.</li>
+					    	<li>Excepteur sint occaecat cupidatat non
+					    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>					    	   
+					    </ul>
+					  </div>
+					  </div>
+					</div>
+					<div class="row">
+					  <h4>Información:</h4>
+					  <div class="col-xs-12 col-sm-12 col-md-6 ">
+					    <p>Jornada Laboral:</p>
+					    <ul>
+					    	<li>Full Time</li>
+					    </ul>
+					  </div>
+					  <div class="col-xs-12 col-sm-12 col-md-6 ">
+					    <p>Sistema de Trabajo:</p>
+					    <ul>
+					    	<li>5 x 2</li>
+					    </ul>
+					  </div>
+					  <div class="col-xs-12 col-sm-12 col-md-6 ">
+					    <p>Horario:</p>
+					    <ul>
+					    	<li>7:00 am - 05:00 pm</li>
+					    </ul>
+					  </div>
+					  <div class="col-xs-12 col-sm-12 col-md-6 ">
+					    <p>Salario:</p>
+					    <ul>
+					    	<li>5000</li>
+					    </ul>
+					  </div>
+					  <div class="col-xs-12 col-sm-12 col-md-6 ">
+					    <p>Cantidad de Vacantes:</p>
+					    <ul>
+					    	<li>1 vacante</li>
+					    </ul>
+					  </div>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal Login Registro -->
+			<div class="modal fade login" id="login" tabindex="-1" role="dialog" aria-labelledby="Login / Registro" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+					  <li class="nav-item">
+					    <a class="nav-link active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Iniciar Sesión</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Registrarme</a>
+					  </li>
+					</ul>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <div class="tab-content" id="pills-tabContent">
+					  <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+					  	<form id="formLogin" method="post" action="login.php">
+					  		<div class="form-group">
+							    <label for="mailLogin" class="bmd-label-floating">Correo Electrónico</label>
+							    <input type="email" class="form-control" id="mailLogin" required>
+							</div>
+							<div class="form-group">
+							    <label for="password-login" class="bmd-label-floating">Contraseña</label>
+							    <input type="password" class="form-control password" id="password-login" value="" required>
+							    <span toggle="#password-login" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+							</div>
+							<a class="otherlinks" id="openrecuperar-pass" href="#recuperar-pass" data-dismiss="modal" data-toggle="modal" data-target="#recuperar-pass" role="button">¿Olvidó su contraseña?</a>
+							<a class="otherlinks" href="javascript:void(0)" id="showRegister">¿No estas registrado?</a>
+							<div class="form-group row">
+							    <div class="col-sm-12">
+							    	<button class="btn btn-naranja" data-dismiss="modal" type="submit">Ingresar</button>
+							    </div>
+							</div>
+					  	</form>
+					  </div>
+					  <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register" aria-selected="true">
+					  	<form id="formregistro" method="post" action="registro.php">
+					  		<div class="form-group">
+							    <label for="nameLastname" class="bmd-label-floating">Nombre y Apellido</label>
+							    <input type="email" class="form-control" id="nameLastname" required>
+							</div>
+							<div class="form-group">
+							    <label for="mailregistro" class="bmd-label-floating">Correo Electrónico</label>
+							    <input type="email" class="form-control" id="mailregistro" required>
+							</div>
+							<div class="form-group">
+							    <label for="password-registro" class="bmd-label-floating">Contraseña</label>
+							    <input type="password" class="form-control password" id="password-registro" value="" required>
+							    <span toggle="#password-registro" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+							</div>
+							<div class="form-group">
+							    <label for="confirm-password" class="bmd-label-floating">Repetir Contraseña</label>
+							    <input type="password" class="form-control password" id="confirm-password" value="" required>
+							    <span toggle="#confirm-password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+							</div>
+
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="terminoscondiciones">
+								<label class="custom-control-label" for="terminoscondiciones">Acepto los <a href="#terminos-y-condiciones" data-toggle="modal" data-target="#terminos-y-condiciones">términos y condiciones</a></label>
+							</div>
+							<div class="form-group row">
+							    <div class="col-sm-12">
+							    	<button class="btn btn-naranja" type="submit" data-dismiss="modal" data-toggle="modal" data-target="#registro-success">Ingresar</button>
+							    </div>
+							</div>
+					  	</form>
+					  </div>					  
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal Recuperar Contraseña -->
+			<div class="modal fade recuperarpass" id="recuperar-pass" tabindex="-1" role="dialog" aria-labelledby="Recuperar Contraseña" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLongTitle">Recuperar Contraseña</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+					<form id="recuperarpass" method="post" action="recuperarpass.php">
+						<div class="form-group">
+						    <label for="mailrecuperacion" class="bmd-label-floating">Correo Electrónico</label>
+						    <input type="email" class="form-control" id="mailrecuperacion" required>
+						</div>
+						<div class="form-group row">
+						    <div class="col-sm-12">
+						    	<button class="btn btn-naranja" type="submit" id="sedrecuperar-pass" href="#recuperar-success" data-dismiss="modal" data-toggle="modal" data-target="#recuperar-success" role="button">enviar</button>
+						    </div>
+						</div>
+				  	</form>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal Recuperar Contraseña Success-->
+			<div class="modal fade recuperarpass" id="recuperar-success" tabindex="-1" role="dialog" aria-labelledby="Recuperar Contraseña" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLongTitle">Recuperar Contraseña</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+					<div class="icon-success">
+						<i class="fas fa-check-circle"></i>
+					</div>
+					<p>La contraseña ha sido enviada a su correo electrónico.</p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal Recuperar Contraseña Success-->
+			<div class="modal fade recuperarpass" id="registro-success" tabindex="-1" role="dialog" aria-labelledby="Recuperar Contraseña" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLongTitle">Registro de Usuario</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+					<div class="icon-success">
+						<i class="fas fa-check-circle"></i>
+					</div>
+					<p>Se ha enviado un mensaje de confirmación a su correo electrónico.</p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal Términos y condiciones-->
+			<div class="modal fade terminosycondiciones" id="terminos-y-condiciones" tabindex="-1" role="dialog" aria-labelledby="Recuperar Contraseña" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLongTitle">Términos y Condiciones</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+					<p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+					<p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 		</main>
 		<footer>
 			<div class="container-fluid">
@@ -342,6 +634,7 @@
 		<script src="js/jquery-3.2.1.slim.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-
+		<script src="js/bootstrap-material-design.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>

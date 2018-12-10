@@ -52,7 +52,7 @@ body {
 }
 header {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     width: 100%;
 }
 
@@ -65,6 +65,14 @@ header .menu-content {
     align-content: center;
     position: relative;
     height: 55px;
+}
+img.overlay {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: 2;
 }
 section {
     padding: 60px 0;
@@ -132,16 +140,7 @@ span.name-user {
 .banners {
     position: relative;
 }
-.sombra {
-    background: rgba(0,0,0,0.7);
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.7) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.7) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.7)), color-stop(20%, transparent), color-stop(80%, transparent), color-stop(100%, rgba(0,0,0,0.7)));
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.7) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.7) 100%);
-    background: -o-linear-gradient(top, rgba(0,0,0,0.7) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.7) 100%);
-    background: -ms-linear-gradient(top, rgba(0,0,0,0.7) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.7) 100%);
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.7) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
-}
+
 .banners h2 {
     position: absolute;
     z-index: 1;
@@ -160,7 +159,7 @@ span.name-user {
 
 .banners h2 {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     color: #FFF;
     font-family: 'GothamNarrow-Black';
     font-size: 70px;
@@ -168,11 +167,11 @@ span.name-user {
     line-height: 40px;
     bottom: 24%;
     left: 21%;
-    text-shadow: 3px 0 8px rgba(16, 16, 16, 0.5);
+    text-shadow: 1px 0 8px rgba(16, 16, 16, 0.5);
 }
 .indicador {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     bottom: 1%;
     width: 100%;
     text-align: center;
@@ -205,8 +204,10 @@ span.name-user {
     font-family: 'Gotham-Bold';
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next, 
+.carousel-control-prev {
     opacity: 1;
+    z-index: 3;
 }
 
 a.btn.btn-filter {
@@ -215,6 +216,11 @@ a.btn.btn-filter {
     width: 80%;
     font-family: 'Gotham-Bold';
     text-align: left;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.modalDetalle .modal-body {
+    padding: 20px 30px;
 }
 .search-option {
     padding: 15px 0;
@@ -222,6 +228,9 @@ a.btn.btn-filter {
 
 label.custom-control-label {
     margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    margin-top: 5px;
 }
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #f68d2c;
@@ -241,13 +250,25 @@ label.custom-control-label {
     justify-content: flex-start;
     align-items: center;
 }
+.list-group-item :first-child {
+    margin-right: 0rem;
+}
 
 .form-group.rangoSalario input {
     margin-right: 10px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: none;
+    background-image: none;
 }
 
 .row.search-content .filtros .row {
     width: 80%;
+    margin: 0;
+}
+.row.search-content .filtros .row .custom-control.custom-checkbox {
+    width: 100%;
 }
 .resultadosnum {
     width: 100%;
@@ -259,6 +280,32 @@ label.custom-control-label {
     align-content: center;
     padding: 10px;
     margin-bottom: 20px;
+}
+.custom-file-uploader {
+  position: relative;
+}
+.custom-file-uploader input[type='file'] {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: default;
+}
+.form-control[readonly] {
+    background-color: #FFF;
+    opacity: 1;
+}
+.btn.btn-default.custom-file-uploader {
+    background-color: #163b72;
+    color: #FFF;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 .card.list-result {
     border-color: #163b72;
@@ -350,12 +397,19 @@ a.btn.btn-detalle {
 }
 button.btn.btn-buscar {
     width: 80%;
+    margin-top: 15px;
+}
+.btn-naranja {
     background-color: #e58701;
     color: #FFF;
 }
 .ft-top {
     background-color: #163b72;
     color: #FFF;
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px 0;
+    height: auto;
 }
 .ft-down {
     background-color: #7a8fbb;
@@ -366,10 +420,349 @@ button.btn.btn-buscar {
     color: #FFF;
     text-align: center;
 }
-footer ul {
-    list-style: none;
+.form-group.form-inline.row label, 
+.form-group.row label {
+    justify-content: flex-end;
+    text-align: right;
+}
+.col-sm-9.select-input {
+    margin-bottom: 1rem;
+}
+.card-header h5 button {
+    color: #FFF;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+.card-header h5 button:hover,
+.card-header h5 button:active,
+.card-header h5 button:focus {
+    color: #FFF;
+    text-decoration: none;
+}
+section.mi-perfil .card .form-group.row select.form-control {
+    width: auto;
+    max-width: 50%;
+}
+a.btn.card-header {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    color: #FFF;
+    margin-bottom: 15px;
+    background-color: #163b72;
+}
+.row.form-body {
+    width: 85%;
+    margin: 0 auto;
+}
+section.mi-perfil .card {
+    border: 0;
+}
+.select-input select.form-control {
+    max-width: 45%;
+    margin-right: 10px;
+}
+section.mi-perfil div#accordion {
+    max-width: 1450px;
+}
+section.mi-perfil .card-body {
+    width: 81%;
+    margin: 0 auto;
+}
+footer {
+    background-color: #163b72;
+}
+.ft-top .col-xs-12.col-sm-12.col-md-8.col-lg-8 h3 {
+    font-size: 16px;
+    font-family: 'Gotham-Bold';
 }
 
+.ft-top .col-xs-12.col-sm-12.col-md-8.col-lg-8 h3 img {
+    max-width: 20px;
+    vertical-align: inherit;
+}
+footer ul {
+    list-style: none;
+    padding-left: 20px;
+}
 footer a {
     color: #FFF;
+}
+.modalDetalle h4 {
+    width: 100%;
+    margin: 10px auto;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: 'Gotham-Bold';
+}
+.modalDetalle .col-xs-12.col-sm-12.col-md-6 p {
+    font-weight: bold;
+    margin: 0;
+}
+.modalDetalle .col-xs-12 ul li {
+    text-align: justify;
+}
+.modalDetalle .col-xs-12 ul {
+    width: 95%;
+}
+.form-group.row .col-sm-9.custom-control.custom-checkbox label.custom-control-label:before, 
+.form-group.row .col-sm-9.custom-control.custom-checkbox label.custom-control-label:after {
+    margin-left: 15px;
+}
+.modal.login .modal-dialog,
+.modal.recuperarpass .modal-dialog {
+    max-width: 400px;
+}
+.modal.login .nav-pills .nav-link, 
+.modal.login .nav-pills>.nav-link {
+    color: #163b72;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+.modal.login .nav-pills .nav-link.active, 
+.modal.login .nav-pills .show>.nav-link {
+    background-color: #FFF;
+    color: #163b72;
+    font-family: 'Gotham-Bold';
+}
+.modal.login .nav-pills .nav-link.active::before, 
+.modal.login .nav-pills .show>.nav-link::before {
+    background-color: #f68d2c;
+    width: 90%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+.modal.login .modal-header ul.nav-pills {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.modal.login .modal-header {
+    border-bottom: 0;
+        align-items: flex-start;    
+}
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+form#formLogin .form-control {
+    border: 0;
+}
+form#formLogin .form-control:active,
+form#formLogin .form-control:focus,
+form#formregistro .form-control:active,
+form#formregistro .form-control:focus,
+form#recuperarpass .form-control:active,
+form#recuperarpass .form-control:focus {
+    box-shadow: none;
+    background-image: linear-gradient(0deg,#163b72 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
+}
+[class*=" bmd-label"], [class^=bmd-label] {
+    color: #163b72;
+    top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.modal .custom-file-control, 
+.modal .form-control, 
+.modal .is-focused .custom-file-control,
+.modal .is-focused .form-control {
+    background-image: linear-gradient(0deg,#163b72 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
+}
+input.form-control,
+select.form-control, 
+input.form-control:active,
+select.form-control:active,
+input.form-control:focus,
+select.form-control:focus {
+    color: #163b72;
+    border: 1px solid #163b72;
+    box-shadow: none;
+    background-image: none;
+
+}
+.custom-file-control:read-only, .form-control:read-only {
+    background-image: none;
+}
+.btn-naranja:hover,
+.btn-naranja:focus,
+.btn-naranja:active {
+    background-color: #163b72;
+    color: #FFF;
+}
+.btn {
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 auto;
+    display: inherit;
+}
+.modal-content {
+    border-radius: 10px;
+}
+.modal.login .modal-body {
+    padding: 20px 40px;
+}
+.modal.login .otherlinks {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #163b72;
+}
+.modal.login .btn {
+    margin-top: 20px;
+    width: 100%;
+}
+form#formLogin .form-control,
+form#formregistro .form-control,
+form#recuperarpass .form-control {
+    border: 0;
+    padding: 0;
+    height: 30px;
+    color: #163b72;
+}
+.modal-open .modal {
+    background-color: rgba(128, 128, 128, 0.7);
+}
+.icon-success {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon-success i {
+    font-size: 45px;
+    color: #0fb90f;
+}
+.modal-title {
+    width: 100%;
+    text-align: center;
+    font-family: 'Gotham-Bold';
+}
+form#formregistro label.custom-control-label {
+    margin-top: 5px;
+    color: #163b72;
+    font-size: 14px;
+}
+
+form#formregistro label.custom-control-label a {
+    color: #163b72;
+    text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width:768px) {
+    .menu-content h1 {
+        width: 70px;
+    }
+    .menu-content::after {
+        width: 100%;
+    }
+    .banners h2 {
+        font-size: 45px;
+        line-height: 45px;
+        bottom: 20%;
+        left: 0;
+        text-align: center;
+    }
+    .banners h2 span {
+        font-size: 19px;
+        font-family: 'Gotham-Bold';
+        display: inline-block;
+        line-height: normal;
+    }
+    span.control-prev img {
+        width: 25px;
+    }
+    .container .row {
+        margin: 0 -5px;
+    }
+    .h2, h2 {
+        font-size: 1.8rem;
+    }
+    a.btn.btn-filter {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    button.btn.btn-buscar {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .card>.list-group:first-child .list-group-item:first-child,
+    .card>.list-group .list-group-item {
+        border-top-left-radius: 0rem;
+        border-top-right-radius: 0rem;
+        padding: 15px 0;
+    }
+    a.btn.btn-detalle {
+        margin-top: 20px;
+    }
+    .card.list-result {
+        margin-bottom: 70px;
+    }
+    .row.pag-results {
+        margin: 0 auto;
+    }
+    a.page-link {
+        width: 25px;
+        height: 25px;
+    }
+    .row.pag-results ul.pagination {
+        width: 100%;
+    }
+    .row.pag-results {
+        margin: 0;
+        width: 90%;
+    }
+    .ft-top {
+        width: 100%;
+    }
+    .logo-footer {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .custom-control-label::before,
+    .custom-control-label::after {
+        top: 0;
+    }
+    .banners.banner-internas h2 {
+        left: 10%;
+        bottom: 25%;
+    }
+    .form-group.form-inline.row label, .form-group.row label {
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .row.form-body {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    a.btn.card-header {
+        margin-bottom: 0;
+    }
+    form#miperfil .form-control {
+        background-image: none;
+    }
+    form#miperfil .form-inline .form-control {
+        display: inline-block;
+        width: auto;
+    }
+    .row.form-body .col {
+        padding: 0;
+    }
+    .form-group.form-inline.row select.form-control {
+        margin-bottom: 10px;
+    }
+    button.btn.btn-naranja {
+        margin-top: 20px;
+    }
 }
