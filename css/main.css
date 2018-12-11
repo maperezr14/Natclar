@@ -211,13 +211,18 @@ span.name-user {
 }
 
 a.btn.btn-filter {
-    color: #163b72;
+    color: #FFF;
+    background: #163b72;
     border: 2px solid;
     width: 80%;
     font-family: 'Gotham-Bold';
     text-align: left;
     margin: 0;
     margin-bottom: 10px;
+}
+a.btn.btn-filter.collapsed {
+    background: #FFF;
+    color: #163b72;
 }
 .modalDetalle .modal-body {
     padding: 20px 30px;
@@ -258,6 +263,8 @@ label.custom-control-label {
     margin-right: 10px;
     border: 1px solid;
     padding: 10px;
+    height: 37px;
+    width: 88px;
     border-radius: 5px;
     box-shadow: none;
     background-image: none;
@@ -357,6 +364,10 @@ li.page-item {
 }
 .resultados {
     position: relative;
+    padding-bottom: 150px;
+}
+a.btn.dropdown-toggle i.fas.fa-chevron-down:before {
+    content: "\f078";
 }
 .page-link:hover,
 .page-link:active,
@@ -395,9 +406,13 @@ a.btn.btn-detalle {
 .row.search-content .filtros .row.rowSalario {
     width: 95%;
 }
+.row.rowSalario .col {
+    padding-left: 0;
+}
 button.btn.btn-buscar {
     width: 80%;
     margin-top: 15px;
+    margin-left: 0;
 }
 .btn-naranja {
     background-color: #e58701;
@@ -410,6 +425,17 @@ button.btn.btn-buscar {
     margin: 0 auto;
     padding: 20px 0;
     height: auto;
+}
+a.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a.btn.collapsed .fa-chevron-down:before {
+    content: "\f078";
+}
+a.btn .fa-chevron-down:before {
+    content: "\f077";
 }
 .ft-down {
     background-color: #7a8fbb;
@@ -444,16 +470,24 @@ section.mi-perfil .card .form-group.row select.form-control {
     width: auto;
     max-width: 50%;
 }
+a.btn.card-header.collapsed {
+    background-color: #163b72;
+}
 a.btn.card-header {
-    display: inline-block;
     width: 100%;
     text-align: left;
     color: #FFF;
     margin-bottom: 15px;
-    background-color: #163b72;
+    background-color: #e58701;
 }
+select {
+    -webkit-appearance: menulist!important; 
+    appearance: menulist!important;
+    width: auto!important;
+}
+
 .row.form-body {
-    width: 85%;
+    width: 65%;
     margin: 0 auto;
 }
 section.mi-perfil .card {
@@ -486,8 +520,10 @@ footer ul {
     list-style: none;
     padding-left: 20px;
 }
-footer a {
+footer a,
+footer a:hover {
     color: #FFF;
+    text-decoration: none;
 }
 .modalDetalle h4 {
     width: 100%;
@@ -657,6 +693,12 @@ form#formregistro label.custom-control-label {
 form#formregistro label.custom-control-label a {
     color: #163b72;
     text-decoration: underline;
+}
+.custom-control-label::before {
+    top: 0; 
+}
+.custom-control-label::after {
+    top: 0;
 }
 
 @media (min-width: 320px) and (max-width:768px) {
