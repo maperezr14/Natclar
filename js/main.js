@@ -18,5 +18,9 @@ $( document ).ready(function() {
 		$("#pills-register").addClass("active show");		
 	});
 
-
+	$(".indicador").click(function() {
+		$('html,body').animate({
+            scrollTop: $(".page-content").offset().top},
+        'slow');            
+    });
 });

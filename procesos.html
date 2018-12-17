@@ -49,13 +49,13 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="column col-sm-12 ">
-							<h2>Mi Perfil</h2>
+							<h2>Únete <br><span>Eres la clave de nuestro éxito.</span></h2>
 							<img class="overlay" src="img/overlay.png">
 							<div id="sliderppal" class="carousel slide" data-ride="carousel" data-interval="6000">
 								<!-- The slideshow -->
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img src="img/bn-tcn-perfil.jpg" alt="Trabaja con nosotros - Natclar">
+										<img src="img/bn-tcn-proceso.jpg" alt="Trabaja con nosotros - Natclar">
 									</div>
 								</div>
 
@@ -67,1059 +67,105 @@
 									<span class="control-prev"><img src="img/control.png"></span>
 								</a> -->
 							</div>
-							<div class="indicador"><i class="fas fa-chevron-down"></i></div>
+							<div class="indicador"><a href="#"><i class="fas fa-chevron-down"></i></a></div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="search">
+			<section id="procesos" class="page-content">
 				<div class="container">
 					<div class="row justify-content-md-center">
 					  	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-					  		<form id="miperfil" name="miperfil" method="post" action=".php">
-						    	<a class="btn card-header" data-toggle="collapse" href="#datos-personales" role="button" aria-expanded="false" aria-controls="datos-personales">Datos Personales <i class="fas fa-chevron-down"></i></a>
-								<div class="row form-body">
-								  <div class="col">
-								    <div class="collapse multi-collapse show" id="datos-personales">
-								      <div class="perfil-inputs">
-								        <div class="form-group row">
-										    <label for="name" class="col-sm-3 col-form-label">Nombre(s):</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="name" name="name">
-										    </div>
-										</div>							        
-										<div class="form-group row">
-										    <label for="lastnameDad" class="col-sm-3 col-form-label">Apellido Paterno:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="lastnameDad" name="lastnameDad">
-										    </div>
-										</div>							        
-										<div class="form-group row">
-										    <label for="lastnameMom" class="col-sm-3 col-form-label">Apellido Materno</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="lastnameMom" name="lastnameMom">
-										    </div>
-										</div>						        
-										<div class="form-group form-inline row">
-										    <label for="numDoc" class="col-sm-3 col-form-label">Tipo de Documento:</label>
-										    <div class="col-sm-9 select-input">
-										    	<fieldset id="numDoc">
-											    	<select class="form-control">
-							                            <option value="0">Seleccione</option>
-							                            <option value="1">Libreta Electoral o DNI</option>
-							                            <option value="2">Carnet de Extranjería</option>
-							                            <option value="3">Reg. único de contribuyentes</option>
-							                            <option value="4">Pasaporte</option>
-							                            <option value="5">Part. de nacimiento-identidad</option>
-							                            <option value="6">Otros</option>
-							                        </select>
-											      <input type="text" class="form-control">
-											  </fieldset>
-										    </div>
-										</div>
-										<div class="form-group form-inline row">
-										    <label for="fechaNac" class="col-sm-3 col-form-label">Fecha de Nacimiento:</label>
-										    <div class="col-sm-9 select-input">
-										    	<fieldset id="fechaNac">
-											    	<select class="form-control" id="day">
-							                            <option value="0">Dia</option>
-							                            <option value="1">01</option>
-							                            <option value="2">02</option>
-							                            <option value="3">03</option>
-							                            <option value="4">04</option>
-							                            <option value="5">05</option>
-							                            <option value="6">06</option>
-							                            <option value="7">07</option>
-							                            <option value="8">08</option>
-							                            <option value="9">09</option>
-							                            <option value="10">10</option>
-							                            <option value="11">11</option>
-														<option value="12">12</option>
-														<option value="13">13</option>
-														<option value="14">14</option>
-														<option value="15">15</option>
-														<option value="16">16</option>
-														<option value="17">17</option>
-														<option value="18">18</option>
-														<option value="19">19</option>
-														<option value="20">20</option>
-														<option value="21">21</option>
-														<option value="22">22</option>
-														<option value="23">23</option>
-														<option value="24">24</option>
-														<option value="25">25</option>
-														<option value="26">26</option>
-														<option value="27">27</option>
-														<option value="28">28</option>
-														<option value="29">29</option>
-														<option value="30">30</option>
-														<option value="31">31</option>
-							                        </select>
-							                        <select class="form-control" id="month">
-							                        	<option value="0">Mes</option>
-							                            <option value="1">Enero</option>
-							                            <option value="2">Febrero</option>
-							                            <option value="3">Marzo</option>
-							                            <option value="4">Abril</option>
-							                            <option value="5">Mayo</option>
-							                            <option value="6">Junio</option>
-							                            <option value="7">Julio</option>
-							                            <option value="8">Agosto</option>
-							                            <option value="9">Septiembre</option>
-							                            <option value="10">Octubre</option>
-							                            <option value="11">Noviembre</option>
-														<option value="12">Diciembre</option>
-							                        </select>
-							                        <select class="form-control" id="year">
-							                        	<option value="0">Año</option>
-							                        	<option value="1">2018</option>
-							                        	<option value="2">2017</option>
-							                        	<option value="3">2016</option>
-							                        	<option value="4">2015</option>
-							                        </select>
-							                    </fieldset>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="genero" class="col-sm-3 col-form-label">Genero:</label>
-										    <div class="col-sm-9">
-										    	<select class="form-control" id="genero">
-							                        <option value="0">Seleccione</option>
-							                        <option value="1">Femenino</option>
-							                        <option value="2">Masculino</option>
-							                    </select>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="nacionalidad" class="col-sm-3 col-form-label">Pais de Nacimiento:</label>
-										    <div class="col-sm-9">
-										    	<select class="form-control" id="nacionalidad">
-							                        <option value="0">Seleccione</option>
-							                        <option value="1">Peru</option>
-							                        <option value="2">Argentina</option>
-							                        <option value="3">Chile</option>
-							                        <option value="4">Colombia</option>
-							                        <option value="5">Uruguay</option>
-							                        <option value="6">Brasil</option>
-							                    </select>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="edoCivil" class="col-sm-3 col-form-label">Estado Civil:</label>
-										    <div class="col-sm-9">
-										    	<select class="form-control" id="edoCivil">
-							                        <option value="0">Seleccione</option>
-							                        <option value="1">Soltero</option>
-							                        <option value="2">Casado</option>
-							                        <option value="3">Divorciado</option>
-							                        <option value="4">Conviviente</option>
-							                    </select>
-										    </div>
-										</div>
-										<div class="form-group form-inline row">
-										    <label for="firstPhone" class="col-sm-3 col-form-label">Número de teléfono (s):</label>
-										    <div class="col-sm-9 select-input">
-										    	<fieldset id="firstPhone">
-											    	<select class="form-control">
-							                            <option value="0">Seleccione</option>
-							                            <option value="1">Bitel</option>
-							                            <option value="2">Claro</option>
-							                            <option value="3">Entel</option>
-							                            <option value="4">Movistar</option>
-							                        </select>
-											      <input type="text" class="form-control" name="firstPhone">
-											  </fieldset>
-										    </div>
-										    <label for="secondPhone" class="col-sm-3 col-form-label"></label>
-										    <div class="col-sm-9 select-input">
-										    	<fieldset id="secondPhone">
-											    	<select class="form-control">
-							                            <option value="0">Seleccione</option>
-							                            <option value="1">Bitel</option>
-							                            <option value="2">Claro</option>
-							                            <option value="3">Entel</option>
-							                            <option value="4">Movistar</option>
-							                        </select>
-											      <input type="text" class="form-control" name="secondPhone">
-											  </fieldset>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="ppalMail" class="col-sm-3 col-form-label">Correo Electrónico (s):</label>
-										    <div class="col-sm-9 select-input">
-										      <input type="email" class="form-control" id="ppalMail" placeholder="Correo principal">
-										    </div>
-										    <label for="secondMail" class="col-sm-3 col-form-label"></label>
-										    <div class="col-sm-9">
-										      <input type="email" class="form-control" id="secondMail" placeholder="Opcional*">
-										    </div>
-										</div>
-										<div class="form-group form-inline row">
-										    <label for="tallaCalzado" class="col-sm-3 col-form-label">Talla ropa / Calzado:</label>
-										    <div class="col-sm-9 select-input">
-										      <fieldset id="tallaCalzado">
-											    	<select class="form-control" name="talla" id="talla">
-							                            <option value="1">S</option>
-							                            <option value="2">M</option>
-							                            <option value="3">L</option>
-							                            <option value="4">XL</option>
-							                        </select>
-											      	<select class="form-control" name="calzado" id="calzado">
-							                            <option value="">35</option>
-														<option value="">36</option>
-														<option value="">37</option>
-														<option value="">38</option>
-														<option value="">39</option>
-														<option value="">40</option>
-														<option value="">41</option>
-														<option value="">42</option>
-														<option value="">43</option>
-														<option value="">44</option>
-														<option value="">45</option>
-														<option value="">46</option>
-														<option value="">47</option>
-														<option value="">48</option>
-														<option value="">49</option>
-							                        </select>
-											  </fieldset>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="numLicencia" class="col-sm-3 col-form-label">Número de licencia:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="numLicencia" name="numLicencia">
-										    </div>
-										</div>
-										
-										
-										
-								      </div>
-								    </div>
-								  </div>
-								</div>
-								<a class="btn card-header collapsed" data-toggle="collapse" href="#direccion" role="button" aria-expanded="false" aria-controls="direccion">Dirección <i class="fas fa-chevron-down"></i></a>
-								<div class="row form-body">
-								  <div class="col">
-								    <div class="collapse multi-collapse" id="direccion">
-								      <div class="perfil-inputs">
-								      	<div class="form-group row">
-										    <label for="tipovia" class="col-sm-3 col-form-label">Tipo de Via:</label>
-										    <div class="col-sm-9">
-										    	<select class="form-control" id="tipovia">
-								                    <option value="0">Seleccione</option>
-								                    <option value="1">Avenida</option>
-								                    <option value="2">Calle</option>
-								                    <option value="3">Jirón</option>
-								                    <option value="4">Pasaje</option>
-								                </select>
-										    </div>
-										</div>
-								        <div class="form-group row">
-										    <label for="namevia" class="col-sm-3 col-form-label">Nombre de Via:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="namevia" name="namevia">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="numerovia" class="col-sm-3 col-form-label">Número de Via:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="numerovia" name="numerovia">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="dpto" class="col-sm-3 col-form-label">Departamento:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="dpto" name="dpto">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="manzana" class="col-sm-3 col-form-label">Manzana:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="manzana" name="manzana">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="interior" class="col-sm-3 col-form-label">Interior:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="interior" name="interior">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="lote" class="col-sm-3 col-form-label">Lote:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="lote" name="lote">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="kilometro" class="col-sm-3 col-form-label">Kilometro:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="kilometro" name="kilometro">
-										    </div>
-										</div>
-										<div class="form-group form-inline row">
-										    <label for="blq-etapa" class="col-sm-3 col-form-label">Bloque/Etapa:</label>
-										    <div class="col-sm-9">
-										      <fieldset id="blq-etapa">
-										      	<input type="text" class="form-control" id="bloque" name="bloque">
-										      	<input type="text" class="form-control" id="etapa" name="etapa">
-										      </fieldset>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="tipozona" class="col-sm-3 col-form-label">Tipo de Zona:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="tipozona" name="tipozona">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="nombrezona" class="col-sm-3 col-form-label">Nombre de Zona:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="nombrezona" name="nombrezona">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="numerozona" class="col-sm-3 col-form-label">Número de Zona:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="numerozona" name="numerozona">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="referencia" class="col-sm-3 col-form-label">Referencia:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="referencia" name="referencia">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="epartamento" class="col-sm-3 col-form-label">Departamento:</label>
-										    <div class="col-sm-9">
-										    	<select class="form-control" id="epartamento">
-								                    <option value="0">Seleccione</option>
-								                    <option value="1">Lima</option>
-								                    <option value="2">Cajamarca</option>
-								                    <option value="3">Amazonas</option>
-								                    <option value="4">Loreto</option>
-								                </select>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="provincia" class="col-sm-3 col-form-label">Provincia:</label>
-										    <div class="col-sm-9">
-										    	<select class="form-control" id="provincia">
-								                    <option value="0">Seleccione</option>
-								                    <option value="1">Lima</option>
-								                    <option value="2">Cajamarca</option>
-								                    <option value="3">Amazonas</option>
-								                    <option value="4">Loreto</option>
-								                </select>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="distrito" class="col-sm-3 col-form-label">Distrito:</label>
-										    <div class="col-sm-9">
-										    	<select class="form-control" id="distrito">
-								                    <option value="0">Seleccione</option>
-								                    <option value="1">Lima</option>
-								                    <option value="2">Cajamarca</option>
-								                    <option value="3">Amazonas</option>
-								                    <option value="4">Loreto</option>
-								                </select>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <div class="col-sm-12">
-										    	<button class="btn btn-naranja" type="button">Añadir +</button>
-										    </div>
-										</div>
-								      </div>
-								    </div>
-								  </div>
-								</div>
-								<a class="btn card-header collapsed" data-toggle="collapse" href="#formacion-academica" role="button" aria-expanded="false" aria-controls="formacion-academica">Formación Académica <i class="fas fa-chevron-down"></i></a>
-								<div class="row form-body">
-								  <div class="col">
-								    <div class="collapse multi-collapse" id="formacion-academica">
-								      <div class="perfil-inputs">
-								        <div class="form-group row">
-										    <label for="insti" class="col-sm-3 col-form-label">Institución Académica:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="insti" name="insti">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="nivelinsti" class="col-sm-3 col-form-label">Nivel Académico:</label>
-										    <div class="col-sm-9">
-										    	<select class="form-control" id="nivelinsti">
-								                    <option value="0">Seleccione</option>
-								                    <option value="1">Bachiller</option>
-								                    <option value="2">Técnico</option>
-								                    <option value="3">Univerisitario</option>
-								                </select>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="estadoformacion" class="col-sm-3 col-form-label">Estado de Formación:</label>
-										    <div class="col-sm-9">
-										    	<select class="form-control" id="estadoformacion">
-								                    <option value="0">Seleccione</option>
-								                    <option value="1">Finalizado</option>
-								                    <option value="2">En curso</option>
-								                    <option value="3">Incompleto</option>
-								                </select>
-										    </div>
-										</div>
-										<div class="form-group form-inline row">
-										    <label for="periodoinicio" class="col-sm-3 col-form-label">Periodo Inicio:</label>
-										    <div class="col-sm-9">
-										      <fieldset id="periodoinicio">
-										      	<select class="form-control" id="month">
-													<option value="0">Mes</option>
-												    <option value="1">Enero</option>
-												    <option value="2">Febrero</option>
-												    <option value="3">Marzo</option>
-												    <option value="4">Abril</option>
-												    <option value="5">Mayo</option>
-												    <option value="6">Junio</option>
-												    <option value="7">Julio</option>
-												    <option value="8">Agosto</option>
-												    <option value="9">Septiembre</option>
-												    <option value="10">Octubre</option>
-												    <option value="11">Noviembre</option>
-													<option value="12">Diciembre</option>
-												</select>
-												<select class="form-control" id="year">
-													<option value="0">Año</option>
-													<option value="1">2018</option>
-													<option value="2">2017</option>
-													<option value="3">2016</option>
-													<option value="4">2015</option>
-												</select>
-										      </fieldset>
-										    </div>
-										</div>
-										<div class="form-group form-inline row">
-										    <label for="periodofin" class="col-sm-3 col-form-label">Periodo Fin:</label>
-										    <div class="col-sm-9">
-										      <fieldset id="periodofin">
-										      	<select class="form-control" id="month">
-													<option value="0">Mes</option>
-												    <option value="1">Enero</option>
-												    <option value="2">Febrero</option>
-												    <option value="3">Marzo</option>
-												    <option value="4">Abril</option>
-												    <option value="5">Mayo</option>
-												    <option value="6">Junio</option>
-												    <option value="7">Julio</option>
-												    <option value="8">Agosto</option>
-												    <option value="9">Septiembre</option>
-												    <option value="10">Octubre</option>
-												    <option value="11">Noviembre</option>
-													<option value="12">Diciembre</option>
-												</select>
-												<select class="form-control" id="year">
-													<option value="0">Año</option>
-													<option value="1">2018</option>
-													<option value="2">2017</option>
-													<option value="3">2016</option>
-													<option value="4">2015</option>
-												</select>
-										      </fieldset>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <div class="col-sm-12">
-										    	<button class="btn btn-naranja" type="button">Añadir +</button>
-										    </div>
-										</div>
-								      </div>
-								    </div>
-								  </div>
-								</div>
-								<a class="btn card-header collapsed" data-toggle="collapse" href="#perfil-profesional" role="button" aria-expanded="false" aria-controls="perfil-profesional">Perfil Profesional <i class="fas fa-chevron-down"></i></a>
-								<div class="row form-body">
-								  <div class="col">
-								    <div class="collapse multi-collapse" id="perfil-profesional">
-								      <div class="perfil-inputs">							       
-								        <div class="form-group row">
-										    <label for="cargo" class="col-sm-3 col-form-label">Cargo o Titulo Breve:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="cargo" name="cargo">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="descripcioncargo" class="col-sm-3 col-form-label">Descripción Breve:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="descripcioncargo" name="descripcioncargo">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="numcolegiatura" class="col-sm-3 col-form-label">N° de Colegiatura:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="numcolegiatura" name="numcolegiatura">
-										    </div>
-										</div>
-										<div class="form-group row upload-cv">
-											<label for="addcv" class="col-sm-3 col-form-label">Adjuntar CV:</label>
-											<div class="col-sm-9">
-										    	<label for="file" class="sr-only">File</label>
-									            <div class="input-group">            
-										            <span class="input-group-btn">
-										              <div class="btn btn-default  custom-file-uploader">
-										                <input id="addcv" type="file" name="file" onchange="this.form.filename.value = this.files.length ? this.files[0].name : ''" />
-										                Seleccionar Archivo
-										              </div>
-										            </span>
-										            <input type="text" name="filename" class="form-control" placeholder=".pdf // .word" readonly>
-									            </div>
-									        </div>
-										</div>
-										<div class="form-group form-inline row">
-										    <label for="periodofincargo" class="col-sm-3 col-form-label">Periodo Fin:</label>
-										    <div class="col-sm-9">
-										      <fieldset id="periodofincargo">
-										      	<select class="form-control" id="month">
-													<option value="0">Mes</option>
-												    <option value="1">Enero</option>
-												    <option value="2">Febrero</option>
-												    <option value="3">Marzo</option>
-												    <option value="4">Abril</option>
-												    <option value="5">Mayo</option>
-												    <option value="6">Junio</option>
-												    <option value="7">Julio</option>
-												    <option value="8">Agosto</option>
-												    <option value="9">Septiembre</option>
-												    <option value="10">Octubre</option>
-												    <option value="11">Noviembre</option>
-													<option value="12">Diciembre</option>
-												</select>
-												<select class="form-control" id="year">
-													<option value="0">Año</option>
-													<option value="1">2018</option>
-													<option value="2">2017</option>
-													<option value="3">2016</option>
-													<option value="4">2015</option>
-												</select>
-										      </fieldset>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <div class="col-sm-12">
-										    	<button class="btn btn-naranja" type="button">Descargar</button>
-										    </div>
-										</div>							
-								      </div>
-								    </div>
-								  </div>
-								</div>
-								<a class="btn card-header collapsed" data-toggle="collapse" href="#experiencias-profesionales" role="button" aria-expanded="false" aria-controls="experiencias-profesionales">Experiencias Profesionales <i class="fas fa-chevron-down"></i></a>
-								<div class="row form-body">
-								  <div class="col">
-								    <div class="collapse multi-collapse" id="experiencias-profesionales">
-								      <div class="perfil-inputs">
-								        <div class="form-group row">
-										    <label for="empresa" class="col-sm-3 col-form-label">Empresa:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="empresa" name="empresa">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="cargoempresa" class="col-sm-3 col-form-label">Cargo:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="cargoempresa" name="cargoempresa">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="areaempresa" class="col-sm-3 col-form-label">Área:</label>
-										    <div class="col-sm-9">
-										    	<select class="form-control" id="areaempresa">
-								                    <option value="0">Seleccione</option>
-								                    <option value="1">Administracion</option>
-								                    <option value="2">Diseño</option>
-								                    <option value="3">Sistemas</option>
-								                </select>
-										    </div>
-										</div>
-										<div class="form-group form-inline row">
-										    <label for="periodoinicioExp" class="col-sm-3 col-form-label">Periodo Inicio:</label>
-										    <div class="col-sm-9">
-										      <fieldset id="periodoinicioExp">
-										      	<select class="form-control" id="month">
-													<option value="0">Mes</option>
-												    <option value="1">Enero</option>
-												    <option value="2">Febrero</option>
-												    <option value="3">Marzo</option>
-												    <option value="4">Abril</option>
-												    <option value="5">Mayo</option>
-												    <option value="6">Junio</option>
-												    <option value="7">Julio</option>
-												    <option value="8">Agosto</option>
-												    <option value="9">Septiembre</option>
-												    <option value="10">Octubre</option>
-												    <option value="11">Noviembre</option>
-													<option value="12">Diciembre</option>
-												</select>
-												<select class="form-control" id="year">
-													<option value="0">Año</option>
-													<option value="1">2018</option>
-													<option value="2">2017</option>
-													<option value="3">2016</option>
-													<option value="4">2015</option>
-												</select>
-										      </fieldset>
-										    </div>
-										</div>
-										<div class="form-group form-inline row">
-										    <label for="periodofinExp" class="col-sm-3 col-form-label">Periodo Fin:</label>
-										    <div class="col-sm-9">
-										      <fieldset id="periodofinExp">
-										      	<select class="form-control" id="month">
-													<option value="0">Mes</option>
-												    <option value="1">Enero</option>
-												    <option value="2">Febrero</option>
-												    <option value="3">Marzo</option>
-												    <option value="4">Abril</option>
-												    <option value="5">Mayo</option>
-												    <option value="6">Junio</option>
-												    <option value="7">Julio</option>
-												    <option value="8">Agosto</option>
-												    <option value="9">Septiembre</option>
-												    <option value="10">Octubre</option>
-												    <option value="11">Noviembre</option>
-													<option value="12">Diciembre</option>
-												</select>
-												<select class="form-control" id="year">
-													<option value="0">Año</option>
-													<option value="1">2018</option>
-													<option value="2">2017</option>
-													<option value="3">2016</option>
-													<option value="4">2015</option>
-												</select>
-										      </fieldset>
-										    </div>
-										</div>
-										<div class="form-group row label-check">
-										    <label for="" class="col-sm-3 col-form-label">Actualmente</label>
-										    <div class="col-sm-9 custom-control custom-checkbox">
-										    	<input type="checkbox" class="custom-control-input" id="chekActualmente">
-												<label class="custom-control-label" for="chekActualmente"></label>
-										    </div>
-										</div>
-								      </div>
-								    </div>
-								  </div>
-								</div>
-								<a class="btn card-header collapsed" data-toggle="collapse" href="#formacion-complementaria" role="button" aria-expanded="false" aria-controls="formacion-complementaria">Formación Complementaria <i class="fas fa-chevron-down"></i></a>
-								<div class="row form-body">
-								  <div class="col">
-								    <div class="collapse multi-collapse" id="formacion-complementaria">
-								      <div class="perfil-inputs">
-								        <div class="form-group row">
-										    <label for="curso" class="col-sm-3 col-form-label">Curso:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="curso" name="curso">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="nivecurso" class="col-sm-3 col-form-label">Nivel de Conocimiento:</label>
-										    <div class="col-sm-9">
-										      <select class="form-control" id="nivecurso">
-								                    <option value="0">Seleccione</option>
-								                    <option value="1">Básico</option>
-								                    <option value="2">Intermedio</option>
-								                    <option value="3">Avanzado</option>
-								                </select>
-										    </div>
-										</div>
-										<div class="form-group form-inline row">
-										    <label for="fechainiciocurso" class="col-sm-3 col-form-label">Fecha de Inicio:</label>
-										    <div class="col-sm-9 select-input">
-										    	<fieldset id="fechainiciocurso">
-											    	<select class="form-control" id="day">
-										                <option value="0">Dia</option>
-										                <option value="1">01</option>
-										                <option value="2">02</option>
-										                <option value="3">03</option>
-										                <option value="4">04</option>
-										                <option value="5">05</option>
-										                <option value="6">06</option>
-										                <option value="7">07</option>
-										                <option value="8">08</option>
-										                <option value="9">09</option>
-										                <option value="10">10</option>
-										                <option value="11">11</option>
-														<option value="12">12</option>
-														<option value="13">13</option>
-														<option value="14">14</option>
-														<option value="15">15</option>
-														<option value="16">16</option>
-														<option value="17">17</option>
-														<option value="18">18</option>
-														<option value="19">19</option>
-														<option value="20">20</option>
-														<option value="21">21</option>
-														<option value="22">22</option>
-														<option value="23">23</option>
-														<option value="24">24</option>
-														<option value="25">25</option>
-														<option value="26">26</option>
-														<option value="27">27</option>
-														<option value="28">28</option>
-														<option value="29">29</option>
-														<option value="30">30</option>
-														<option value="31">31</option>
-										            </select>
-										            <select class="form-control" id="month">
-										            	<option value="0">Mes</option>
-										                <option value="1">Enero</option>
-										                <option value="2">Febrero</option>
-										                <option value="3">Marzo</option>
-										                <option value="4">Abril</option>
-										                <option value="5">Mayo</option>
-										                <option value="6">Junio</option>
-										                <option value="7">Julio</option>
-										                <option value="8">Agosto</option>
-										                <option value="9">Septiembre</option>
-										                <option value="10">Octubre</option>
-										                <option value="11">Noviembre</option>
-														<option value="12">Diciembre</option>
-										            </select>
-										            <select class="form-control" id="year">
-										            	<option value="0">Año</option>
-										            	<option value="1">2018</option>
-										            	<option value="2">2017</option>
-										            	<option value="3">2016</option>
-										            	<option value="4">2015</option>
-										            </select>
-										        </fieldset>
-										    </div>
-										</div>
-										<div class="form-group row label-check">
-										    <label for="" class="col-sm-3 col-form-label">Cursando</label>
-										    <div class="col-sm-9 custom-control custom-checkbox">
-										    	<input type="checkbox" class="custom-control-input" id="chekCursando">
-												<label class="custom-control-label" for="chekCursando"></label>
-										    </div>
-										</div>
-										<div class="form-group form-inline row">
-										    <label for="fechainiciocurso" class="col-sm-3 col-form-label">Fecha de Inicio:</label>
-										    <div class="col-sm-9 select-input">
-										    	<fieldset id="fechainiciocurso">
-											    	<select class="form-control" id="day">
-										                <option value="0">Dia</option>
-										                <option value="1">01</option>
-										                <option value="2">02</option>
-										                <option value="3">03</option>
-										                <option value="4">04</option>
-										                <option value="5">05</option>
-										                <option value="6">06</option>
-										                <option value="7">07</option>
-										                <option value="8">08</option>
-										                <option value="9">09</option>
-										                <option value="10">10</option>
-										                <option value="11">11</option>
-														<option value="12">12</option>
-														<option value="13">13</option>
-														<option value="14">14</option>
-														<option value="15">15</option>
-														<option value="16">16</option>
-														<option value="17">17</option>
-														<option value="18">18</option>
-														<option value="19">19</option>
-														<option value="20">20</option>
-														<option value="21">21</option>
-														<option value="22">22</option>
-														<option value="23">23</option>
-														<option value="24">24</option>
-														<option value="25">25</option>
-														<option value="26">26</option>
-														<option value="27">27</option>
-														<option value="28">28</option>
-														<option value="29">29</option>
-														<option value="30">30</option>
-														<option value="31">31</option>
-										            </select>
-										            <select class="form-control" id="month">
-										            	<option value="0">Mes</option>
-										                <option value="1">Enero</option>
-										                <option value="2">Febrero</option>
-										                <option value="3">Marzo</option>
-										                <option value="4">Abril</option>
-										                <option value="5">Mayo</option>
-										                <option value="6">Junio</option>
-										                <option value="7">Julio</option>
-										                <option value="8">Agosto</option>
-										                <option value="9">Septiembre</option>
-										                <option value="10">Octubre</option>
-										                <option value="11">Noviembre</option>
-														<option value="12">Diciembre</option>
-										            </select>
-										            <select class="form-control" id="year">
-										            	<option value="0">Año</option>
-										            	<option value="1">2018</option>
-										            	<option value="2">2017</option>
-										            	<option value="3">2016</option>
-										            	<option value="4">2015</option>
-										            </select>
-										        </fieldset>
-										    </div>
-										</div>
-										<div class="form-group row label-check">
-										    <label for="" class="col-sm-3 col-form-label">Vigencia</label>
-										    <div class="col-sm-9 custom-control custom-checkbox">
-										    	<input type="checkbox" class="custom-control-input" id="chekvigencia">
-												<label class="custom-control-label" for="chekvigencia"></label>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <div class="col-sm-12">
-										    	<button class="btn btn-naranja" type="button">Añadir +</button>
-										    </div>
-										</div>
-								      </div>
-								    </div>
-								  </div>
-								</div>
-								<a class="btn card-header collapsed" data-toggle="collapse" href="#idiomas" role="button" aria-expanded="false" aria-controls="idiomas">Idiomas <i class="fas fa-chevron-down"></i></a>
-								<div class="row form-body">
-								  <div class="col">
-								    <div class="collapse multi-collapse" id="idiomas">
-								      <div class="perfil-inputs">
-								        <div class="form-group row">
-										    <label for="curso" class="col-sm-3 col-form-label">Idioma:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="curso" name="curso">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="nivecurso" class="col-sm-3 col-form-label">Nivel:</label>
-										    <div class="col-sm-9">
-										      <select class="form-control" id="nivecurso">
-								                    <option value="0">Seleccione</option>
-								                    <option value="1">Básico</option>
-								                    <option value="2">Intermedio</option>
-								                    <option value="3">Avanzado</option>
-								                </select>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <div class="col-sm-12">
-										    	<button class="btn btn-naranja" type="button">Añadir +</button>
-										    </div>
-										</div>
-								      </div>
-								    </div>
-								  </div>
-								</div>
-								<a class="btn card-header collapsed" data-toggle="collapse" href="#discapacidad" role="button" aria-expanded="false" aria-controls="discapacidad">Discapacidad <i class="fas fa-chevron-down"></i></a>
-								<div class="row form-body">
-								  <div class="col">
-								    <div class="collapse multi-collapse" id="discapacidad">
-								      <div class="perfil-inputs">								       
-								        <div class="form-group row">
-										    <label for="discpacidad" class="col-sm-3 col-form-label">Discapacidad:</label>
-										    <div class="col-sm-9">
-										      <select class="form-control" id="discpacidad">
-								                    <option value="0">Seleccione</option>
-								                    <option value="1">Discapacidad 1</option>
-								                    <option value="2">Discapacidad 2</option>
-								                    <option value="3">Discapacidad 3</option>
-								                </select>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <div class="col-sm-12">
-										    	<button class="btn btn-naranja" type="button">Añadir +</button>
-										    </div>
-										</div>										
-								      </div>
-								    </div>
-								  </div>
-								</div>
-								<a class="btn card-header collapsed" data-toggle="collapse" href="#condicion-trabajo" role="button" aria-expanded="false" aria-controls="condicion-trabajo">Condición de Trabajo <i class="fas fa-chevron-down"></i></a>
-								<div class="row form-body">
-								  <div class="col">
-								    <div class="collapse multi-collapse" id="condicion-trabajo">
-								      <div class="perfil-inputs">								       
-								        <div class="form-group row">
-										    <label for="expectativa" class="col-sm-3 col-form-label">Expectativa Salarial:</label>
-										    <div class="col-sm-9">
-										      <input type="text" class="form-control" id="expectativa" name="expectativa">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="discpacidad" class="col-sm-3 col-form-label">Situación actual:</label>
-										    <div class="col-sm-9">
-										      <select class="form-control" id="discpacidad">
-								                    <option value="0">Seleccione</option>
-								                    <option value="1">Empleado</option>
-								                    <option value="2">Contrato determinado</option>
-								                    <option value="3">Desempleado</option>
-								                </select>
-										    </div>
-										</div>
-										<div class="form-group form-inline row">
-										    <label for="fechadisp" class="col-sm-3 col-form-label">Fecha Disponibilidad:</label>
-										    <div class="col-sm-9 select-input">
-										    	<fieldset id="fechadisp">
-											    	<select class="form-control" id="day">
-										                <option value="0">Dia</option>
-										                <option value="1">01</option>
-										                <option value="2">02</option>
-										                <option value="3">03</option>
-										                <option value="4">04</option>
-										                <option value="5">05</option>
-										                <option value="6">06</option>
-										                <option value="7">07</option>
-										                <option value="8">08</option>
-										                <option value="9">09</option>
-										                <option value="10">10</option>
-										                <option value="11">11</option>
-														<option value="12">12</option>
-														<option value="13">13</option>
-														<option value="14">14</option>
-														<option value="15">15</option>
-														<option value="16">16</option>
-														<option value="17">17</option>
-														<option value="18">18</option>
-														<option value="19">19</option>
-														<option value="20">20</option>
-														<option value="21">21</option>
-														<option value="22">22</option>
-														<option value="23">23</option>
-														<option value="24">24</option>
-														<option value="25">25</option>
-														<option value="26">26</option>
-														<option value="27">27</option>
-														<option value="28">28</option>
-														<option value="29">29</option>
-														<option value="30">30</option>
-														<option value="31">31</option>
-										            </select>
-										            <select class="form-control" id="month">
-										            	<option value="0">Mes</option>
-										                <option value="1">Enero</option>
-										                <option value="2">Febrero</option>
-										                <option value="3">Marzo</option>
-										                <option value="4">Abril</option>
-										                <option value="5">Mayo</option>
-										                <option value="6">Junio</option>
-										                <option value="7">Julio</option>
-										                <option value="8">Agosto</option>
-										                <option value="9">Septiembre</option>
-										                <option value="10">Octubre</option>
-										                <option value="11">Noviembre</option>
-														<option value="12">Diciembre</option>
-										            </select>
-										            <select class="form-control" id="year">
-										            	<option value="0">Año</option>
-										            	<option value="1">2018</option>
-										            	<option value="2">2017</option>
-										            	<option value="3">2016</option>
-										            	<option value="4">2015</option>
-										            </select>
-										        </fieldset>
-										    </div>
-										</div>
-										<div class="form-group row label-check">
-										    <label for="" class="col-sm-3 col-form-label">Disponible</label>
-										    <div class="col-sm-9 custom-control custom-checkbox">
-										    	<input type="checkbox" class="custom-control-input" id="chekDisponible">
-												<label class="custom-control-label" for="chekDisponible"></label>
-										    </div>
-										</div>
-										<div class="form-group form-inline row">
-										    <label for="fechadispfinal" class="col-sm-3 col-form-label">Fecha final:</label>
-										    <div class="col-sm-9 select-input">
-										    	<fieldset id="fechadispfinal">
-											    	<select class="form-control" id="day">
-										                <option value="0">Dia</option>
-										                <option value="1">01</option>
-										                <option value="2">02</option>
-										                <option value="3">03</option>
-										                <option value="4">04</option>
-										                <option value="5">05</option>
-										                <option value="6">06</option>
-										                <option value="7">07</option>
-										                <option value="8">08</option>
-										                <option value="9">09</option>
-										                <option value="10">10</option>
-										                <option value="11">11</option>
-														<option value="12">12</option>
-														<option value="13">13</option>
-														<option value="14">14</option>
-														<option value="15">15</option>
-														<option value="16">16</option>
-														<option value="17">17</option>
-														<option value="18">18</option>
-														<option value="19">19</option>
-														<option value="20">20</option>
-														<option value="21">21</option>
-														<option value="22">22</option>
-														<option value="23">23</option>
-														<option value="24">24</option>
-														<option value="25">25</option>
-														<option value="26">26</option>
-														<option value="27">27</option>
-														<option value="28">28</option>
-														<option value="29">29</option>
-														<option value="30">30</option>
-														<option value="31">31</option>
-										            </select>
-										            <select class="form-control" id="month">
-										            	<option value="0">Mes</option>
-										                <option value="1">Enero</option>
-										                <option value="2">Febrero</option>
-										                <option value="3">Marzo</option>
-										                <option value="4">Abril</option>
-										                <option value="5">Mayo</option>
-										                <option value="6">Junio</option>
-										                <option value="7">Julio</option>
-										                <option value="8">Agosto</option>
-										                <option value="9">Septiembre</option>
-										                <option value="10">Octubre</option>
-										                <option value="11">Noviembre</option>
-														<option value="12">Diciembre</option>
-										            </select>
-										            <select class="form-control" id="year">
-										            	<option value="0">Año</option>
-										            	<option value="1">2018</option>
-										            	<option value="2">2017</option>
-										            	<option value="3">2016</option>
-										            	<option value="4">2015</option>
-										            </select>
-										        </fieldset>
-										    </div>
-										</div>
-										<div class="form-group row label-check">
-										    <label for="" class="col-sm-3 col-form-label">Disponibilidad para viajar</label>
-										    <div class="col-sm-9 custom-control custom-checkbox">
-										    	<input type="checkbox" class="custom-control-input" id="chekviaje">
-												<label class="custom-control-label" for="chekviaje"></label>
-										    </div>
-										</div>
-										<div class="form-group row label-check">
-										    <label for="" class="col-sm-3 col-form-label">Régimen Atípico</label>
-										    <div class="col-sm-9 custom-control custom-checkbox">
-										    	<input type="checkbox" class="custom-control-input" id="chekRegimen">
-												<label class="custom-control-label" for="chekRegimen"></label>
-										    </div>
-										</div>
-										<div class="form-group row label-check">
-										    <label for="" class="col-sm-3 col-form-label">Estudiando</label>
-										    <div class="col-sm-9 custom-control custom-checkbox">
-										    	<input type="checkbox" class="custom-control-input" id="chekEstudiando">
-												<label class="custom-control-label" for="chekEstudiando"></label>
-										    </div>
-										</div>										
-								      </div>
-								    </div>
-								  </div>
-								</div>
-								<div class="form-group row">
-								    <div class="col-sm-12">
-								    	<button class="btn btn-naranja" type="button">Guardar mi perfil <i class="fas fa-check"></i></button>
-								    </div>
+					  		<form id="checklist" name="checklist" method="post" action=".php">
+								<div class="row">
+									<h2>Procesos</h2>
+									<p class="status">En proceso: <b>2 empleos</b></p>
+									<div class="card list-result">
+										<ul class="list-group list-group-flush">
+										    <li class="list-group-item">
+										    	<div class="row">
+													<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 datos-proceso">
+													    <p class="area">Odontologia</p>
+													    <p class="cargo">clínica - Sede La Victoria</p>
+													    <div class="date-job">
+													      <p>Fecha de Publicación: 02/12/2018</p>
+													      <p>Jornada: FULL TIME</p>
+													      <p>Área: Administración</p>
+													    </div>
+													</div>
+													<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 content-pasos">
+												    	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 pasos activo">
+												    		<p class="paso-txt">Postulado</p>
+												    		<p>12/10/2018</p>
+												    		<p>6:10 p.m.</p>
+												    	</div>
+												    	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 pasos activo">
+												    		<p class="paso-txt">CV <br><span>Revisado</span></p>
+												    		<p>12/10/2018</p>
+												    		<p>6:10 p.m.</p>
+												    	</div>
+												    	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 pasos">
+												    		<p class="paso-txt">Proceso</p>
+												    	</div>
+												    	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 pasos">
+												    		<p class="paso-txt">Finalista</p>
+												    	</div>
+												    	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 acciones">
+												    		<a href="#"><i class="fas fa-trash"></i></a>
+												    		<a href="#"><img src="img/tag-user.png"></a>
+												    	</div>
+													</div>
+												</div>
+										    </li>
+										    <li class="list-group-item">
+										    	<div class="row">
+													<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 datos-proceso">
+													    <p class="area">Odontologia</p>
+													    <p class="cargo">clínica - Sede La Victoria</p>
+													    <div class="date-job">
+													      <p>Fecha de Publicación: 02/12/2018</p>
+													      <p>Jornada: FULL TIME</p>
+													      <p>Área: Administración</p>
+													    </div>
+													</div>
+													<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 content-pasos">
+												    	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 pasos completado">
+												    		<p class="paso-txt">Proceso de postulación finalizado</p>												    		
+												    	</div>
+												    	<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 acciones">
+												    		<a href="#"><i class="fas fa-trash"></i></a>
+												    		<a href="#"><img src="img/tag-user.png"></a>
+												    	</div>												    	
+													</div>
+												</div>
+										    </li>
+										</ul>
+									</div>
 								</div>
 							</form>
+							<div class="row pag-results">
+								<nav aria-label="pag results navigation">
+								  <ul class="pagination">
+								    <li class="page-item">
+								      <a class="page-link control" href="#" aria-label="Previous">
+								        <span aria-hidden="true">&laquo;</span>
+								        <span class="sr-only">Previous</span>
+								      </a>
+								    </li>
+								    <li class="page-item"><a class="page-link" href="#">1</a></li>
+								    <li class="page-item"><a class="page-link" href="#">2</a></li>
+								    <li class="page-item"><a class="page-link" href="#">3</a></li>
+								    <li class="page-item"><a class="page-link" href="#">...</a></li>
+								    <li class="page-item"><a class="page-link" href="#">6</a></li>
+								    <li class="page-item">
+								      <a class="page-link control" href="#" aria-label="Next">
+								        <span aria-hidden="true">&raquo;</span>
+								        <span class="sr-only">Next</span>
+								      </a>
+								    </li>
+								  </ul>
+								</nav>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1152,7 +198,6 @@
 			    </div>
 			  </div>
 			</div>
-		</main>
 		<footer>
 			<div class="container-fluid">
 				<div class="row ft-top">
@@ -1197,6 +242,7 @@
 		</footer>
 
 		<script src="js/jquery-3.2.1.slim.min.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootstrap-material-design.min.js"></script>
